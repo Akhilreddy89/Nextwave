@@ -3,8 +3,8 @@ import Footer from "./components/Footer";
 import Content from "./components/Content";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Cart from "./components/Cart";
 import Orders from "./components/Orders";
+import Cart from "./components/cart";
 
 export default function App(){
   return (
