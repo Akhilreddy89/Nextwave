@@ -4,7 +4,7 @@ import Content from "./components/Content";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Orders from "./components/Orders";
-import Cart from "./components/cart";
+// import Cart from "./components/cart";
 
 export default function App(){
   return (
@@ -13,7 +13,7 @@ export default function App(){
       <Content/>
       <Login/>
       <Register/>
-      <Cart/>
+      {/* <Cart/> */}
       <Orders/>
       <Footer/>
     </>
