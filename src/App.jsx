@@ -1,22 +1,28 @@
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 import Login from "./components/Login";
+import Logout from "./components/Logout";
 import Register from "./components/Register";
+import Cart from "./components/Cart";
 import Orders from "./components/Orders";
-// import Cart from "./components/cart";
-
-export default function App(){
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+function App() {
   return (
-    <>
-      <Header/>
-      <Content/>
-      <Login/>
-      <Register/>
-      {/* <Cart/> */}
-      <Orders/>
-      <Footer/>
-    </>
+    <div>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route index element={<Content />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="login" element={<Login />} />
+           <Route path="logout" element={<Logout />} />
+          <Route path="register" element={<Register />} />
+          <Route path="orders" element={<Orders />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
-  
-} 
+}
+export default App;

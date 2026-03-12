@@ -1,6 +1,4 @@
 function Cart(){
-    return(
-        <h1>Cart</h1>
-    );
+    return <h1>Hello world</h1>
 }
-export {Cart};
+export default Cart;
